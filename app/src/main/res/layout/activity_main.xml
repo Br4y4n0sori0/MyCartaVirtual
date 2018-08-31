@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/degradado"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:fontFamily="@font/arbutus"
+            android:lineSpacingExtra="8sp"
+            android:text="FORK FOOD RESTAURANTE"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <Button
+            android:id="@+id/botonVerMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:onClick="VerMapa"
+            android:text="Ver ubicación"
+            app:layout_constraintTop_toBottomOf="@+id/titulo"
+            tools:layout_editor_absoluteX="31dp" />
+
+        <Button
+            android:id="@+id/botonVerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:onClick="VerMenu"
+            android:text="Ver menu"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <Button
+            android:id="@+id/botonReserva"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:onClick="HacerReserva"
+            android:text="Reservar mesa"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Califica nuestro servicio"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="65dp"
+            android:paddingRight="30dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
